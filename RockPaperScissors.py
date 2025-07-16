@@ -1,8 +1,9 @@
+# data
 skg = {"sang","kaghaz","gheychi"}
 userWin = 0
 pcWin = 0
 mosavi = 0
-
+# process
 bazi = input("aya bazi mikonid y|n ")
 while (bazi == "y"):
     user = input("sang(s) | kaghaz(k) | gheychi(g) ")
