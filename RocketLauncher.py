@@ -22,5 +22,15 @@ rotation = int(input("Enter the degree of rotation..."))
 distance = int(input("Enter the distance...")) 
 t.left(rotation)
 t.forward(distance)
+# Winning and losing conditions
+x = t.xcor()
+y = t.ycor()
+
+if((x >= 200 and x <= 250 and y == 0) or (x >= 300 and x <= 350 and y >= 200 and y <= 250) or (x >= 300 and x <= 350 and y >= -200 and y <= -150)):
+    t.pencolor("green")
+    t.write("You won")
+else:
+    t.pencolor("red")
+    t.write("You lost")
 
 t.done()
