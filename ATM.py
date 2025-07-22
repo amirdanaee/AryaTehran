@@ -1,6 +1,19 @@
 # data
-passWord = "1234"
-accountBalance = 1000000
+passWord_file = open("password.txt","w")
+passWord_file.write("1234\n")
+passWord_file = open("password.txt","r")
+passWord = passWord_file.read().strip()
+passWord_file.close()
+# passWord = "1234"
+accountBalance_file = open("accountBalance.txt","a")
+accountBalance_file.write("1000000\n")
+accountBalance_file = open("accountBalance.txt","r")
+readLine = accountBalance_file.readline()
+strip = readLine.strip()
+accountBalance = int(strip[-1])
+accountBalance_file.close()
+# accountBalance = 1000000
+
 # process
 soal = input("karte khod ra vared namayid y|n   ")
 while(soal == "y"):
