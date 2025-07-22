@@ -36,4 +36,5 @@ while(play == "yes"):
 
     play = input("Are you playing? yes/no ...")
     t.reset()
-    t.done()
+
+t.done()
