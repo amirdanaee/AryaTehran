@@ -1,16 +1,16 @@
 # data
 passWord_file = open("password.txt","w")
-passWord_file.write("1234\n")
+passWord_file.write("1234")
+passWord_file.close()
 passWord_file = open("password.txt","r")
-passWord = passWord_file.read().strip()
+passWord = passWord_file.read()
 passWord_file.close()
 # passWord = "1234"
-accountBalance_file = open("accountBalance.txt","a")
-accountBalance_file.write("1000000\n")
+accountBalance_file = open("accountBalance.txt","w")
+accountBalance_file.write("1000000")
+accountBalance_file.close()
 accountBalance_file = open("accountBalance.txt","r")
-readLine = accountBalance_file.readline()
-strip = readLine.strip()
-accountBalance = int(strip[-1])
+accountBalance_file.read()
 accountBalance_file.close()
 # accountBalance = 1000000
 
